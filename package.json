@@ -1,4 +1,5 @@
 {
+	"homepage": "http://hyhae.github.io/pokerogue-easymode",
 	"name": "pokemon-rogue-battle",
 	"private": true,
 	"version": "1.0.4",
@@ -13,7 +14,9 @@
 		"test:watch": "vitest watch --coverage",
 		"eslint": "eslint --fix .",
 		"eslint-ci": "eslint .",
-		"docs": "typedoc"
+		"docs": "typedoc",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.3.0",
@@ -25,6 +28,7 @@
 		"axios-cache-interceptor": "^1.3.2",
 		"eslint": "^8.57.0",
 		"eslint-plugin-import": "^2.29.1",
+		"gh-pages": "^6.1.1",
 		"jsdom": "^24.0.0",
 		"json-beautify": "^1.1.1",
 		"lefthook": "^1.6.12",
